@@ -1,0 +1,22 @@
+#personalizamos el puerto
+server:
+  port: 9028
+#propiedades para acceder a BBDD  
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: root
+    url: jdbc:mysql://localhost:3306/tiendavirtual
+    username: root
+#propiedades para que hibernate cree adecuadamente las instrucciones SQL
+  jpa:
+    hibernate:
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+#seridor Eureka
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka
+      
