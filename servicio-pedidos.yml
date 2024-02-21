@@ -1,6 +1,6 @@
 #personalizamos el puerto
 server:
-  port: 9028
+  port: 9038
 #propiedades para acceder a BBDD  
 spring:
   datasource:
