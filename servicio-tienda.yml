@@ -4,8 +4,6 @@ app:
   password: admin
   urlAuth: http://localhost:8080/realms/UsuariosCursoRealm/protocol/openid-connect/token
   username: admin
-server:
-  port: 9041
 eureka:
   client:
     service-url:
